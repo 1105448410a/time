@@ -1,0 +1,71 @@
+#music{
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    height: 50px;
+    line-height: 50px;
+    line-height:100px;
+    z-index: 30;
+}
+#music>span{
+    position: relative;
+    top: -15px;
+    font-size: 25px;
+    color:rgb(255,216,134);
+    font-weight: bolder;
+}
+#music:hover span{
+    color:rgb(118, 74, 109);
+}
+#btn{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(1, 1,1, 0);
+    background-image: url(./image/music.png);
+    background-size: 100%;
+    border-radius: 100%;
+    border: 1px rgba(1, 1,1, 0) solid;
+    cursor: pointer;
+    animation: autoRotate 10s infinite linear;
+    outline:none;
+}
+
+
+@keyframes autoRotate{
+    from{
+
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+#bottom{
+    height: 40px;
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 300;
+}
+#bottom>span{
+    color: red;
+}
+#bottom:hover{
+    color: red;
+}
+body{
+    width:100%;
+    height:100%;
+    background-image: url(./image/back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:0% 40%;
+}
+

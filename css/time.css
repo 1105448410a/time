@@ -1,0 +1,64 @@
+#time{
+    position: absolute;
+    top: 150px;
+    width: 220px;
+    right: 30px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: pink;
+    /* background-color: rgba(0, 0, 0, 0.192); */
+    border: 5px rgba(255, 192, 203, 0.3) solid;
+}
+#d{
+    font-size: 60px;
+    color: rgb(249, 205, 173);
+    
+}
+#d2{
+    font-size: 75px;
+    color: rgb(254, 67, 101);
+    
+}
+#d3{
+    font-size: 45px;
+    color: rgb(252, 157, 154);
+}
+#d3>span{
+    color: pink;
+}
+#d3-love{
+    color: red;
+}
+#daytxt{
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+}
+#hourtxt{
+    color: rgb(0, 0, 0);
+}
+#minitetxt{
+    font-size: 25px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+}
+#secondtxt{
+    color: rgb(0, 0, 0);
+}
+#day{
+    color: rgb(247, 247, 247);
+}
+#hour{
+    font-weight: 600;
+    color: rgb(252, 157, 154);
+}
+#minite{
+    font-weight: 600;
+    color: rgb(252, 157, 154);
+}
+#second{
+    font-weight: 600;
+    color: rgb(224, 83, 79);
+    font-size: 75px;
+}

@@ -1,0 +1,106 @@
+ul,li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+html{
+        overflow-y: hidden
+}
+.nav{
+    position: absolute;
+    top: -205px;
+    left: -2px;
+}
+.nav>li{
+    display: none;
+    font-size: 30px;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    border: 3px rgba(255, 255, 255, 0.7) solid;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color:rgb(118, 74, 109);
+}
+.text:hover .nav>li{
+    display: block;
+}
+
+#leftBox{
+       padding-top:100px;
+       height: 100px;
+       position: fixed;
+       bottom: 80px;
+       left: -664px;
+       transition: 1s;
+       z-index: 120;
+}
+.text{
+   position: relative;
+   background-color:rgb(118, 74, 109);
+   font-size: 30px;
+   float: left;
+   margin-left: 6px;
+   color: rgb(255,216,134);
+   width: 160px;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   border: 3px rgba(255, 255, 255, 0.7) solid;
+   box-sizing: border-box;
+   margin-top: 20px;
+}
+#leftBox:hover{
+       left: 30px;
+}
+.text:hover{
+        background-color:  rgb(70, 70, 70);
+}
+.nav>li:hover{
+        background-color:  rgb(70, 70, 70);
+}
+a{
+   text-decoration: none;
+   color:  rgb(255,216,134);
+}
+#xin{
+     margin-left: 40px;
+   width: 100px;
+   height: 100px;
+   float: left;
+   border:5px white solid;
+   border-radius: 60px;
+   box-sizing: border-box;
+   font-size: 30px;
+   color: red;
+   text-align: center;
+   line-height: 100px;
+   
+}
+#xin>img{
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+        animation: BL 3s infinite ease;
+}
+
+
+@keyframes BL{
+   0%{
+        transform: scale(1);
+   }
+   25%{
+        transform: scale(1.3); 
+   }
+   50%{
+        transform: scale(1); 
+   }
+   75%{
+        transform: scale(1.3); 
+   }
+   100%{
+        transform: scale(1);
+   }
+}
+

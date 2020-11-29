@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "./图片/爱心.ico">
+    <title>身边的你</title>
+    <!-- 导入css -->
+    <link rel="stylesheet" href="./css/center.css">
+    <link rel="stylesheet" href="./css/time.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1743249_grf4shm1g3t.css">
+    <link rel="stylesheet" href="./css/load and love.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/right.css">
+    <link rel="stylesheet" href="">
+    <!-- 导入script -->
+    <script src="./js/load and love.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script src="./js/jquery.snow.js"></script>
+    <!-- 导入字体 -->
+    <style>
+        @font-face{
+            font-family: "HS";
+            src: url(./font/DFPShaoNvW5-GB.ttf);
+        }
+        *{
+            font-family: "HS";
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready( function(){
+                $.fn.snow();
+        });
+    </script>
+    <!-- 载入动画 -->
+   <div id="load">
+       <div id="love"></div>
+   </div>
+
+   <!-- 背景音乐 -->
+   <audio src="./music/山有木兮.mp3" controls="controls" preload id="music1" hidden autoplay loop="-1"></audio>
+   <div id="music">
+       <button onclick="bf()" id="btn">
+       </button>
+       <span>暂停/继续</span>
+   </div>
+   <script src="./js/music.js" id></script>
+
+   <!-- 相关栏 -->
+    <div id="leftBox">
+        <div class="text">
+            联系我们
+            <ul class="nav">
+                <li id="zhang">张先生</li>
+                <li id="cui">崔小姐</li>
+                <li>没别人了</li>
+            </ul>
+        </div>
+        <div class="text" id="zhufu">
+            祝福我们
+        </div>
+        <div class="text">
+            <a href="https://1105448410a.github.io/" target="_blank">个人博客</a>
+        </div>
+        <div class="text">
+        玩玩游戏
+        <ul class="nav">
+            <li>
+                <a href="./js小游戏/迷宫.html" target="_blank">迷宫</a>
+            </li>
+            <li>
+                <a href="./js小游戏/扫雷.html" target="_blank">扫雷</a>
+            </li>
+            <li>
+                <a href="./js小游戏/贪吃蛇.html" target="_blank">贪吃蛇</a>
+            </li>
+        </ul>
+        </div>
+        <div id="xin">
+            <img src="./css/image/love.png" alt="">
+        </div>
+    </div>
+
+    <!-- 右上动画 -->
+    <div id="rightBox">
+        <div id="BOX1">
+
+        </div>
+        <div id="moveLove">
+            ♥
+        </div>
+        <div id="BOX2">
+
+        </div>
+    </div>
+    <style>
+        #center::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(./css/image/back.jpg);
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            z-index: -1;
+            -webkit-filter: blur(10px);
+            -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+            -o-filter: blur(10px);
+            filter: blur(10px);
+            margin: -60px;
+        }
+        h1,h2,h4,h5,h6{
+            text-align: center;
+        }
+        h1{
+            margin-top: 50px;
+            font-size: 45px;
+            color: pink;
+        }
+        h2{
+            color:  rgb(254, 67, 101);
+        }
+        h3{
+            color: yellow;
+        }
+        h4{
+            font-size: 20px;
+            color:skyblue;
+        }
+        h5{
+            font-size: 40px;
+            color: purple;
+        }
+        h6{
+            font-size: 30px;
+            color:rgb(224, 83, 79);
+        }
+        .h7{
+            margin-top: 30px;
+            font-size: 45px;
+            color: red;
+        }
+    </style>
+    <!-- 时间轴 -->
+    <div id="center">
+        <div class="arrow" id="arrowTop">
+            <img src="./css/image/top.png" alt="">
+        </div>
+        <div class="arrow" id="arrowBottom">
+            <img src="./css/image/bottom.png" alt="">
+        </div>
+        <div id="content">
+            <div class="boxRight">
+                <h1>进入大学的</h1>
+                <h2>第一天</h2>
+                <h4>充满了对大学的好奇</h4>
+                <h5>此时我还不知道</h5>
+                <h6>会遇见你</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/1.png" alt="">
+                <span>2018/09/05</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/2.png" alt="">
+                <span>2020/09/16</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1></h1>
+                <h3>这是我手机中</h3>
+                <h2>第一张</h2>
+                <h4>有你的相片</h4>
+                <h5>当时为什么会偷拍你呢？</h5>
+                <h6>你猜</h6>
+            </div>
+
+
+                
+            <div class="boxRight">
+                <h1></h1>
+                <h6>这是一个光棍节我保存的图片</h6>
+                <h3>为什么不能再早一点</h3>
+                <h2>向你出手</h2>
+                <h4>这样就不至于过光棍节了</h4>
+                <h6>你猜</h6>
+            </div>
+            <div class="boxLeft">
+                <img src="./图片/3.png" alt="">
+                <span>2018/11/11</span>
+            </div>
+            
+            <div class="boxRight">
+                <img src="./图片/4.png" alt="">
+                <span>2018/11/12</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>又是一张偷拍</h1>
+                <h4>背影都让人陶醉</h4>
+                <h6>不愧是我</h6>
+                <h3>未来的宝贝</h3>
+                <h2>盯上你了，盯上你了</h2>
+            </div>
+
+
+            
+            <div class="boxRight">
+                <h1></h1>
+                <h3>和你第一次聊很久的天</h3>
+                <h2>说的就是烩面</h2>
+                <h4>千里姻缘</h4>
+                <h5>美食牵？</h5>
+                <h6>真是两只猪</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/5.png" alt="">
+                <span>2018/11/29</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/6.png" alt="">
+                <span>2018/11/30</span>
+            </div>
+            
+            <div class="boxLeft">
+                <h1></h1>
+                <h6>第一次送你礼物</h6>
+                <h3>一个耳机</h3>
+                <h2>当时很想送你更好的耳机</h2>
+                <h4>但是时间不允许啊</h4>
+                <h6>想给你最好的</h6>
+            </div>
+
+
+
+                
+            <div class="boxRight">
+                <h1>你给我的第一张照片</h1>
+                <h2>虽然傻傻的</h2>
+                <h4>可是</h4>
+                <h5>可是依旧很好看</h5>
+                <h6>不愧是你，我的猪</h6>
+            </div>
+            <div class="boxLeft">
+                <img src="./图片/7.png" alt="">
+                <span>2018/12/03</span>
+            </div>
+            
+            <div class="boxRight">
+                <img src="./图片/8.png" alt="">
+                <span>2018/12/07</span>
+            </div>
+    
+            <div class="boxLeft" style="display: noen;">
+                <h1>我们相恋了！！</h1>
+                <h4>看着电影，看着你</h4>
+                <h6>送出准备好的礼物</h6>
+                <h3>牵上你的手</h3>
+                <h2>我们在一起了</h2>
+            </div>
+
+
+            <div class="boxRight">
+                <h1></h1>
+                <h3>那天是元旦</h3>
+                <h2>在餐厅包饺子</h2>
+                <h4>我的头有些大</h4>
+                <h5>嗯，你的也不小</h5>
+                <h6>大概是第一张合照</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/9.png" alt="">
+                <span>2018/12/22</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/10.png" alt="">
+                <span>2018/12/22</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>还是这一天</h1>
+                <h2>吃完饺子</h2>
+                <h4>坐在一起拍了好多好多合照</h4>
+                <h5>现在看来，那是我们合照的百分之八十了</h5>
+            </div>
+
+            <div class="boxRight">
+                <h1>那天是元旦晚会</h1>
+                <h4>你演了一个傻了吧唧的小红帽</h4>
+                <h6>我也试着往校园墙丢了个表白信</h6>
+                <h3>能遇见你</h3>
+                <h2>我真的很幸运哦</h2>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/11.png" alt="">
+                <span>2018/12/26</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/12.png" alt="">
+                <span>2018/12/31</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1></h1>
+                <h3>2018年的最后一天</h3>
+                <h2>这是进入大学的一年</h2>
+                <h4>这是成长了很多的一年</h4>
+                <h5>这是遇见你的一年</h5>
+                <h6>要进入崭新的未来拉！</h6>
+            </div>
+
+            <div class="boxRight">
+                <h1>温柔的你</h1>
+                <h2>好看死了</h2>
+                <h4>继续我的偷拍大业</h4>
+                <h5>这么好看，我为什么不能拍呢？</h5>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/13.png" alt="">
+                <span>2019/01/01</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/14.png" alt="">
+                <span>2019/01/01</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>这张明明巨好看</h1>
+                <h3>你看我多开心</h3>
+                <h2>你还说它是丑照</h2>
+                <h4>今天我就为它正名</h4>
+                <h5>很好看！！！！</h5>
+            </div>
+
+            <div class="boxRight">
+                <h1>明明刚在一起</h1>
+                <h4>却就要放假了</h4>
+                <h6>带你去沙滩玩玩</h6>
+                <h3>虽然是个小小小湖边的沙滩</h3>
+                <h2>留一个记号，嘿嘿嘿</h2>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/15.png" alt="">
+                <span>2019/01/08</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/16.png" alt="">
+                <span>2019/01/09</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>热恋时的别离</h1>
+                <h2>让人很难受</h2>
+                <h4>第一次很讨厌放假</h4>
+                <h5>就想黏在一起</h5>
+            </div>
+
+            <div class="boxRight">
+                <h1>我不想你</h1>
+                <h6>只是想去尉氏玩一玩</h6>
+                <h5>吃点好吃的</h5>
+                <h4>好吧，我摊牌了，确实是很想你</h4>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/17.png" alt="">
+                <span>2019/01/18</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/18.png" alt="">
+                <span>2019/03/12</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>开学啦</h1>
+                <h4>又要黏黏腻腻的在一起了</h4>
+                <h6>睁眼到闭眼的那种</h6>
+                <h3>你还是那么好看</h3>
+            </div>
+
+            <div class="boxRight">
+                <h1>还是偷拍</h1>
+                <h2>但是居然被你反应过来了</h2>
+                <h4>得换一个拍照片快一点得手机了</h4>
+                <h6>偷拍不到可不不行</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/19.png" alt="">
+                <span>2019/03/12</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/20.png" alt="">
+                <span>2019/03/26</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>这是一只猪</h1>
+                <h2>这是一只睡着了的猪</h2>
+                <h4>这是一只睡着了还被偷拍的猪</h4>
+                <h5>对，就是你是猪</h5>
+            </div>
+
+            <div class="boxRight">
+                <h1>我还记得这盘大盘鸡</h1>
+                <h4>辣死我了</h4>
+                <h6>你还说可以接受</h6>
+                <h3>当时的我确实不能吃辣</h3>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/21.png" alt="">
+                <span>2019/03/29</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/22.png" alt="">
+                <span>2019/03/30</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1></h1>
+                <h3>你送我的一只猪</h3>
+                <h2>长得很想你</h2>
+                <h4>抓着这只猪</h4>
+                <h5>就等于抓住了你</h5>
+                <h6>没错的就是这样</h6>
+            </div>
+
+            <div class="boxRight">
+                <h1>偷拍大业还在继续</h1>
+                <h2>这次连正脸都某的了</h2>
+                <h4>换手机的日程要提前了</h4>
+                <h6>下次争取拍到正脸</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/23.png" alt="">
+                <span>2019/04/09</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/24.png" alt="">
+                <span>2020/04/16</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1></h1>
+                <h3>这不是我</h3>
+                <h2>只是太困了</h2>
+                <h4>没什么好说的</h4>
+                <h5>赶快看下一个</h5>
+            </div>
+
+            <div class="boxRight">
+                <h1>一起吃的一次鱼</h1>
+                <h3>好吃不好吃不记得了</h3>
+                <h5>就记得没有刺</h5>
+                <h6>你和我吃的都很开心</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/25.png" alt="">
+                <span>2019/05/17</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/26.png" alt="">
+                <span>2019/06/06</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1></h1>
+                <h2>一转眼就暑假了</h2>
+                <h4>听说你很想我</h4>
+                <h6>给你比个心吧</h6>
+                <h3>当时我头发真长啊</h3>
+            </div>
+
+            <div class="boxRight">
+                <h1></h1>
+                <h3>暑假过去了</h3>
+                <h2>晚上带你在包公湖边散步</h2>
+                <h4>灯光很好看</h4>
+                <h5>但是还是你伸懒腰的背影</h5>
+                <h6>更更更好看！！</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/27.png" alt="">
+                <span>2019/07/06</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/28.png" alt="">
+                <span>2019/08/20</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>学校新装修了一个食堂</h1>
+                <h3>很好看，当时还以为我们会经常吃</h3>
+                <h5>但事实告诉我们</h5>
+                <h6>我们还是一直吃三楼</h6>
+            </div>
+
+            <div class="boxRight">
+                <h1></h1>
+                <h2>拍个照片还不给我露脸</h2>
+                <h4>哼哼</h4>
+                <h6>要露脸！</h6>
+                <h3>下不为例</h3>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/29.png" alt="">
+                <span>2019/12/06</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/30.png" alt="">
+                <span>2020/02/23</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>换了手机</h1>
+                <h3>丢了好多照片</h3>
+                <h5>好心疼</h5>
+                <h6>每一张照片都很珍贵</h6>
+            </div>
+
+
+            <div class="boxRight">
+                <h1></h1>
+                <h2>假期在家</h2>
+                <h4>你给我买了好多好多吃的</h4>
+                <h6>我只记得那个假期</h6>
+                <h3>我的体重一路狂飙</h3>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/31.png" alt="">
+                <span>2020/03/12</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/32.png" alt="">
+                <span>2020/05/19</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>隔离结束了</h1>
+                <h2>分离了好久好久的重逢</h2>
+                <h4>好想你</h4>
+                <h5>但是再想你也不影响我偷偷拍你</h5>
+            </div>
+
+            <div class="boxRight">
+                <h1>日常被逮到</h1>
+                <h3>这不是偷拍</h3>
+                <h5>这是光明正大的拍</h5>
+                <h6>你还非要挡，唉</h6>
+            </div>
+    
+            <div class="boxLeft">
+                <img src="./图片/33.png" alt="">
+                <span>2020/09/21</span>
+            </div>
+    
+            <div class="boxRight">
+                <img src="./图片/34.png" alt="">
+                <span>2020/11/23</span>
+            </div>
+    
+            <div class="boxLeft">
+                <h1></h1>
+                <h2>偷偷告诉你</h2>
+                <h4>这个发型从背后看</h4>
+                <h6>很像泡面</h6>
+                <h3>虽然也挺好看</h3>
+            </div>
+            <div class="boxRight">
+                <h1 class="h7">我爱你</h1>
+                <h1 class="h7">我的猪猪</h1>
+            </div>
+    
+            <div class="boxLeft">
+                <h1>丢了很多我们的照片</h1>
+                <h2>但是我们会一直一直在一起</h2>
+                <h6>创造更多我们的回忆</h6>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/direction.js"></script>
+
+
+    <style>
+
+    </style>
+    <!-- 计时 -->
+    <div id="time">
+        <p id="d">至今日</p>
+        <p id="d2">我们</p>
+        <p id="d3">已经<span id="d3-love">♥</span><span>相恋</span></p>
+        <span id="day">xxx</span>
+        <p id="daytxt">天</p>
+        <span id="hour">xx</span>
+        <p id="hourtxt">时</p>
+        
+        <span id="minite">xx</span>
+        <p id="minitetxt">分</p>
+        <span id="second">xx</span>
+        <p id="secondtxt">秒</p>
+    </div>
+    <script src="./js/time.js"></script>
+   <!-- 尾部栏 -->
+   <div id="bottom">
+       <span>♥</span>
+      一起走到故事的最后
+   </div>
+   <script src="./js/window.js"></script>
+</body>
+</html>

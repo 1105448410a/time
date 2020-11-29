@@ -1,0 +1,179 @@
+#center{
+    position: relative;
+    width: 900px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 40px;
+}
+
+.boxLeft{
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px;
+    float: left;
+    width: 390px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    
+}
+.boxLeft::after{
+    content: " ";
+    background-color:white;
+    filter: blur(3px);
+    overflow: hidden;
+    width: 10px;
+    height: 310px;
+    position:absolute;
+    left: 445px;
+    top: -45px;
+}
+.boxRight{
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px;
+    float: right;
+    width: 390px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+   
+}
+.boxRight::after{
+    content: " ";
+    background-color:white;
+    filter: blur(3px);
+    overflow: hidden;
+    width: 10px;
+    height: 310px;
+    position:absolute;
+    left: -65px;
+    top: -45px;
+}
+.boxRight>img{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 225px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
+}
+.boxLeft>img{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 225px;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
+}
+.boxLeft>span{
+    width: 120px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 220px;
+    bottom: 35px;
+    font-style: italic;
+    font-weight: bolder;
+    color: pink;
+    font-size: 45px;
+    z-index: 100;
+}
+.boxRight>span{
+    width: 120px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    left: 30px;
+    bottom: 35px;
+    font-style: italic;
+    font-weight: bolder;
+    color: pink;
+    font-size: 45px;
+    z-index: 100;
+}
+.boxRight:hover span{
+    color:white;
+}
+.boxLeft:hover span{
+    color:white;
+}
+
+.arrow{
+    left: 22.5%;
+    width: 55%;
+    position: fixed;
+    height: 80px;
+    z-index: 500;
+}
+.arrow>img{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+}
+#arrowTop{
+    top: 65px;
+    background-image: url(./image/top.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: arrowtop 3s infinite;
+}
+#arrowBottom{
+    bottom: 105px;
+    background-image: url(./image/bottom.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: arrowbottom 3s infinite;
+}
+#content{
+    position: relative;
+}
+
+@keyframes arrowtop{
+    0%{
+        top: 65px;
+    }
+    8%{
+        top: 35px;
+    }
+    16%{
+        top: 65px;
+    }
+    25%{
+        top: 35px;
+    }
+    31%{
+        top: 65px;
+    }
+    100%{
+        top: 65px;
+    }
+}
+
+@keyframes arrowbottom{
+    0%{
+        bottom: 105px;
+    }
+    8%{
+        bottom: 75px;
+    }
+    16%{
+        bottom: 105px;
+    }
+    25%{
+        bottom: 75px;
+    }
+    31%{
+        bottom: 105px;
+    }
+    100%{
+        bottom: 105px;
+    }
+}
